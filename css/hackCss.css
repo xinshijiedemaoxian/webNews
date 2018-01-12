@@ -1,0 +1,115 @@
+/*--------------------------兼容-------------------------*/
+@media screen and (min-width:320px) {
+     html { font-size: 20px; }
+     body { font-size: 14px; }
+}
+@media screen and (min-width:360px) {
+    html { font-size: 22.5px; }
+    body { font-size: 14px; }
+}
+
+@media screen and (min-width:375px) {
+     html { font-size: 23.4375px; }
+     body { font-size: 14px; }
+
+}
+
+/*@media screen and (min-width:384px) {
+    html { font-size: 24px; }
+    body { font-size: 14px; }
+}*/
+
+/*@media screen and (min-width:400px) {
+    html { font-size: 25px; }
+    body { font-size: 14px; }
+}*/
+
+@media screen and (min-width:414px) {
+    html { font-size: 25.875px; }
+    body { font-size: 14px; }
+
+
+}
+
+/*@media screen and (min-width:424px) {
+    html { font-size: 26.5px; }
+    body { font-size: 14px; }
+}*/
+
+@media screen and (min-width:480px) {
+    html { font-size: 30px; }
+    body { font-size: 15.36px; }
+}
+
+/*@media screen and (min-width:540px) {
+    html { font-size: 33.75px; }
+    body { font-size: 17.28px; }
+}*/
+
+@media screen and (min-width:640px) {
+    html { font-size: 40px; }
+    body { font-size: 20.48px; }
+}
+
+/*@media screen and (min-width:700px) {
+    html { font-size: 45px; }
+    body { font-size: 23.04px; }
+
+}*/
+
+@media screen and (min-width:768px) {
+    html { font-size: 46.875px; }
+    body { font-size: 24px; }
+}
+
+
+
+@media (max-width: 1499px){
+
+}
+@media (min-width: 1200px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 768px) {
+    .find_nav_list{left: 50%!important;transform: translate(-50%,0);}
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+}
+@media (max-width: 991px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+@media only screen and (max-width: 767px) {
+    /*news*/
+    #newsContent .ItemLink .articleTitle {  font-size: 0.6rem;  }
+    #newsContent .ItemLink .articleTime {  font-size: 0.48rem;  }
+    #page_nav li a{font-size:0.6rem;}
+    /*newsArticle*/
+    #newsArticle .article-title h2 { font-size: 0.8rem;  }
+    #newsArticle .article-dateTime span{font-size: 0.6rem;}
+    #newsArticle .article-content p{font-size:0.6rem;}
+    #articlePage .pager a{font-size:0.6rem;}
+    #sharePhone p{font-size:0.6rem;}
+}
+
+@media only screen and (min-width:480px) and (max-width:767px){
+    #newsContent .ItemLink .imgNew img{max-height:110px;}
+}
+@media(max-width:479px){
+
+}
+@media only screen and (min-width: 375px) and (max-width: 479px) {
+
+}
+@media only screen and (max-width: 374px) {
+
+}

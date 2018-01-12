@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11;IE=10;IE=9; IE=8; IE=7; IE=EDGE">
+    <!-- 强制页面在当前窗口以独立页面显示 -->
+    <meta HTTP-EQUIV="Window-target" CONTENT="_top">
+    <!-- 浏览器内核控制：强制360等浏览器使用webkit内核 -->
+    <meta name="renderer" content="webkit">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 转码申明：用百度打开网页可能会对其进行转码（比如贴广告），避免转码可添加如下meta -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- WebApp全屏模式：伪装app，离线应用。 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
+    <title> 新闻 </title>
+    <meta name="keywords" content="">
+    <meta name="description" content=""/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/public.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hackCss.css" type="text/css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="js/query.js"></script>-->
+    <!--<script type="text/javascript" src="js/paging.js"></script>-->
+
+    <script src="js/script.js"></script>
+</head>
+<body class="news">
+<nav class="find_nav">
+    <div class="find_nav_left">
+        <div class="find_nav_list">
+            <ul>
+                <li class="find_nav_cur"><a href="javascript:void(0);">要闻</a></li>
+                <li><a href="javascript:void(0);">北京</a></li>
+                <li><a href="javascript:void(0);">社会</a></li>
+                <li><a href="javascript:void(0);">国内</a></li>
+                <li><a href="javascript:void(0);">国际</a></li>
+                <li><a href="javascript:void(0);">独家</a></li>
+                <li><a href="javascript:void(0);">财经</a></li>
+                <li><a href="javascript:void(0);">娱乐</a></li>
+                <li class="sideline"></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="newsContent" class="wrap">
+    <div class="newsLIst" id="newsList">
+        <!--<div class="newsItem clearfix">
+            <a class="ItemLink" href="newsArticle.html">
+                <img class="imgNew" src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1454143625,2843779643&fm=173&s=C640DD0301BB338C144C8915030060C3&w=550&h=397&img.JPEG" alt="">
+                <dl class="articleNew">
+                    <dt class="articleTitle">
+                        列车长谈类似女子阻高铁关门隐患:烟民最麻烦
+                    </dt>
+                    <dd class="articleCon hidden-xs">以“等老公”为由阻挡高铁车门关闭，合肥女子罗某近日备受争议，她是一名小学教师，目前已被教育部门停职检查。</dd>
+                    <span class="articleTime">2018-01-11</span>
+                </dl>
+            </a>
+        </div>-->
+    </div>
+</section>
+<!--<div id="pageGo">
+    <div id="pageTool"></div>-->
+<nav align="center" id="page_nav">
+    <ul class="pagination" id="page_prev">
+        <li id="prev">
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">上一页</span>
+            </a>
+        </li>
+    </ul>
+    <ul class="pagination" id="page_ul">
+
+    </ul>
+    <ul class="pagination" id="page_next">
+        <li id="next">
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">下一页</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<script src="js/pageData.js"></script>
+<!--</div>-->
+</body>
+</html>
