@@ -65,6 +65,7 @@ function page(p){
                         time:item[i].ArtTime
                     })
                 }
+                pageBtn(0);
             }else{
                 $("#page_ul").empty();
                 for (var i = 0; i < pageSize; i++) {
@@ -85,6 +86,7 @@ function page(p){
                     var pageNum=$(this).text();
                     gotoPage(pageNum,p);
                 });
+                pageBtn(0);
             }
 
         },
@@ -120,25 +122,27 @@ function gotoPage(pageNum){
         }
     });
 }
+function pageBtn(cuPage) {
+    $("#page_ul li").eq(cuPage).addClass('activeBtn').siblings().removeClass('activeBtn');
+}
 
 $(function(){
-    /*   $('#pageTool').Paging({pagesize:5,count:50,callback:function(page,size,count){
-     console.log(arguments)
-     alert('当前第 ' +page +'页,每页 '+size+'条,总页数：'+count+'页')
-     }});*/
     page(1)
     $("#page_prev li").on("click",function(){
         if(currentPage==1){
 
         }else{
             gotoPage(--currentPage);
+            pageBtn(--currentPage);
         }
     });
     $("#page_next li").on("click",function(){
         if(currentPage==pageTotal){
 
         }else{
+            pageBtn(currentPage);
             gotoPage(++currentPage);
+
         }
     })
 })

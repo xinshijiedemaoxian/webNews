@@ -82,6 +82,7 @@
 
 #page_nav,#page_nav a {color:#333;}
 #page_nav li a{font-size:0.36rem;padding: 6px 12px;}
+#page_nav li.activeBtn a{background:#ddd;}
 /*-------------------newsArticle.html-----------------------*/
 #newsArticle{padding-bottom:10px;border-bottom:1px solid #ddd; }
 #newsArticle .article-title h2{font-size:0.6rem;font-weight: 600;line-height: 1.5;}
