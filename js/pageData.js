@@ -16,7 +16,7 @@ var comHTML = function (param) {
         htm = '';
     htm += `<div class="newsItem clearfix">
     <a class="ItemLink" href="${link}">
-        < img class="imgNew" src="${img}" alt="">
+        <img class="imgNew" src="${img}" alt=""/>
         <dl class="articleNew">
             <dt class="articleTitle">${dt}</dt>
             <dd class="articleCon hidden-xs">${dd}</dd>
@@ -55,24 +55,25 @@ function page(p){
             currentPage=1;
             if(pageTotal==1){
                 for (var i = 0; i < pageSize; i++) {
+
                     //调用的话
                     comHTML({
-                        link:'+item[i].URL+',
-                        img:'+item[i].imageUrl+',
-                        dt:'+item[i].ArtTitle +',
-                        dd:'+item[i].ArtCon +',
-                        time:'+item[i].ArtTime +'
+                        link:item[i].URL,
+                        img:item[i].imageUrl,
+                        dt:item[i].ArtTitle ,
+                        dd:item[i].ArtCon ,
+                        time:item[i].ArtTime
                     })
                 }
             }else{
                 $("#page_ul").empty();
                 for (var i = 0; i < pageSize; i++) {
                     comHTML({
-                        link:'+item[i].URL+',
-                        img:'+item[i].imageUrl+',
-                        dt:'+item[i].ArtTitle +',
-                        dd:'+item[i].ArtCon +',
-                        time:'+item[i].ArtTime +'
+                        link:item[i].URL,
+                        img:item[i].imageUrl,
+                        dt:item[i].ArtTitle ,
+                        dd:item[i].ArtCon ,
+                        time:item[i].ArtTime
                     })
                 }
                 for(var i=1;i<pageTotal+1;i++){
@@ -106,11 +107,11 @@ function gotoPage(pageNum){
             $("#newsList").empty();
             for (var i=startRow;i<endRow;i++) {
                 comHTML({
-                    link:'+item[i].URL+',
-                    img:'+item[i].imageUrl+',
-                    dt:'+item[i].ArtTitle +',
-                    dd:'+item[i].ArtCon +',
-                    time:'+item[i].ArtTime +'
+                    link:item[i].URL,
+                    img:item[i].imageUrl,
+                    dt:item[i].ArtTitle,
+                    dd:item[i].ArtCon,
+                    time:item[i].ArtTime
                 })
             }
         },
