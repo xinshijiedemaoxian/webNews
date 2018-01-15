@@ -1,5 +1,6 @@
 // var pan=$
 $(function(){
+    //标题效果
     $(".find_nav_list").css("left",sessionStorage.left+"px");
     $(".find_nav_list li").each(function(){
         if($(this).find("a").text()==sessionStorage.pagecount){
@@ -65,7 +66,20 @@ $(function(){
             e.preventDefault();
         }
     });
+    //新闻标题定位
+    var a = $('#find_nav'),
+        b =a.offset();
+    $(document).on('scroll',function(){
+        var	c = $(document).scrollTop();
+        if(b.top<=c){
+            a.css({'position':'fixed','top':'0px'})
+        }else{
+            a.css({'position':'relative'})
+        }
+    })
+
 });
+//标题名称
 function navName(c_nav) {
     switch (c_nav) {
         case "资讯":
